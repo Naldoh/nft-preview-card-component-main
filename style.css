@@ -1,0 +1,109 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Very-dark-blue-main-BG);
+  color: var(--Soft-blue);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 1.25rem;
+}
+
+.crypto {
+  display: grid;
+  background-color: var(--Very-dark-blue-card-BG);
+  padding: 1.25rem;
+  border-radius: 0.825rem;
+  overflow: hidden;
+  width: 350px;
+}
+
+.crypto__body {
+  display: grid;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.crypto__name {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--White); 
+}
+
+.crypto__description {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.crypto__price, .crypto__time-left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crypto__price {
+  font-weight: 600;
+  color: var(--Cyan);
+}
+
+.crypto__time-left {
+  
+}
+
