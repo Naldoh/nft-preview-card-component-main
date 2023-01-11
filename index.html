@@ -16,9 +16,16 @@
 
   <main>
     <article class="crypto">
-      <img src="images/image-equilibrium.jpg" alt="photo of a glass cube named Equilibrium">
+      <div class="image_container">
+        <img src="images/image-equilibrium.jpg" alt="photo of a glass cube named Equilibrium">
+      
+        <div class="image_hoveredeye">
+          <img src="images/icon-view.svg" alt="an eye when we hover the cube image">
+        </div>
+      </div>
 
       <div class="crypto__body">
+
         <h1 class="crypto__name">
           Equilibrium #3429
         </h1>
@@ -27,19 +34,21 @@
           Our Equilibrium collection promotes balance and calm.
         </p>
 
-        <div class="crypto__price">
-          0.041 ETH
+        <div class="crypto__infos">
+          <div class="crypto__price">
+            <img src="images/icon-ethereum.svg" alt="icon of ethereum's logo">
+              0.041 ETH
+          </div>
+            
+          <div class="crypto__time-left">
+            <img src="images/icon-clock.svg" alt="icon of clock">
+              3 days left
+          </div>
         </div>
-          
-        <div class="crypto__time-left">
-          3 days left
-        </div>
-
-        <div class="crypto__line"></div>
 
         <div class="crypto__author">
-          <img src="images/image-avatar.png" alt="round portrait of the author">
-          Creation of Jules Wyvern
+          <img src="images/image-avatar.png" alt="round portrait of the author" class="crypto__avatar">
+          Creation of <span>Jules Wyvern</span>
         </div>
  
       </div>
